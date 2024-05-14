@@ -1,0 +1,25 @@
+sources:
+    - name: raw
+      database: CITIBIKE_RAW
+      schema: public
+      tables:
+        -  name: trips_raw
+           identifier: trips_raw_new
+    - name: trf_trips
+      database: CITIBIKE
+      schema: NYC
+      tables:
+        - name: trf_trips
+          identifier: TRIPS_TRANSFORMED
+        - name: riders
+          identifier: RIDERS
+        - name: stations
+          identifier: STATIONS
+        - name: station_detail
+          identifier: STATION_DETAIL
+        - name: bike_inventory
+          identifier: STATION_BIKES_INVENTORY
+        - name: cal
+          identifier: CALENDAR
+        - name: weather
+          identifier: WEATHER
